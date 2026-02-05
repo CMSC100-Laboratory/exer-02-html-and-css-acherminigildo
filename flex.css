@@ -25,6 +25,11 @@ html {
     margin: 20px;
 }
 
+.header-title {
+    color: white;
+    font-weight: bold;
+}
+
 .header-navbar {
     list-style-type: none;
     margin: 0;
@@ -34,6 +39,17 @@ html {
     align-items: center;
     flex-direction: row;
     gap: 20px;
+}
+
+.header-navbar-links{
+    display: inline-block; 
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.header-navbar-links:hover {
+  transform: scale(1.2);
 }
 
 
