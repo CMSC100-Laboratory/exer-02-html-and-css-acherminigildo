@@ -12,7 +12,7 @@ Steps on how to create a website using GitHub page:
 
     2.) Change the GitHub repository as public visibility in the repository's general settings. 
 
-    3.) In GitHub settings pages tab, change Branche from 'none' to 'main'. Wait for the link to be created. 
+    3.) In GitHub settings pages tab, change Branch from 'none' to 'main'. Wait for the link to be created. 
 
 Congrats! The website has now been created with GitHub page.
 
