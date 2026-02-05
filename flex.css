@@ -1,29 +1,19 @@
+/*
+    Aidan Ricen C. Herminigildo (2024-67906)
+    BS Computer Science
+*/
+
+
+/* Sets HTML background color as egg-shell white-ish color*/
 html {
     background-color: rgb(255, 247, 228);
 }
 
+/* Changes font for whole webpage (and removes margins)*/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.flex-test {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.flex-item-test {
-    border-style: solid;
-    border-width: 2px;
-    border-color: gray;
+    margin: 0;
+    padding: 0;
 }
 
 /* Whole Header container*/
@@ -33,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    height: 100px;
+    height: 120px;
 }
 
 /* Header - Logo container*/
@@ -42,7 +32,7 @@ body {
     align-items: center;
     flex-direction: row;
     margin: 20px;
-    height: 80px;
+    height: 90px;
     object-fit: cover;
     /*box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.4);*/
 }
@@ -91,7 +81,15 @@ body {
     border: none;
     font-size: 40px;
     font-weight: bolder;
-    transition: transform 0.3s ease;
+}
+
+/* Styling for divider in the header */
+.header-divider {
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 60px;
+    font-weight: normal;
 }
 
 /* Header - Navbar container*/
@@ -117,10 +115,29 @@ body {
 
 /* Adds animation for the links to grow when hovered*/
 .header-navbar-links:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: white;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.flex-test {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-item-test {
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+}
 
 .footer {
     display: flex;
