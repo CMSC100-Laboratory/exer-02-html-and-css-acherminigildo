@@ -35,20 +35,43 @@
 
     <!-- BODY -->
     <div class="flex-test">
-        <!-- Left Container: For Image and About (Autobiography) -->
-        <div class="flex-container-about" id="about" style="flex: 1;">
-            <h1>Hi, I'm Aidan!</h1>
-            <div class="about-logo">
-                <img src="Images/Herminigildo_1x1.jpg" alt="LOGO">
+        <!-- Left Container: For Image and Info -->
+        <div class="info-container" style="flex: 1;">
+            <div class="info-logo">
+                <img src="Images/Herminigildo_1x1.jpg" alt="1x1">
             </div>
-            <p>Aidan Ricen C. Herminigildo</p>
-            <p>UPLB (2024-67906)</p>
+            <div class="info-text-container">
+                <p class="info-top-text">Aidan Ricen C. Herminigildo </p>
+                <p class="info-bottom-text">BS Computer Science</p>
+                <div class="info-university">
+                    <img src="Images/UPLB_logo.png" alt="UPLB">
+                </div>
+            </div>
         </div>
 
-        <!-- Right Container: For Skills -->
-        <div class="flex-container" style="flex: 2;">
-            <h1>2</h1>
-            <p>This is a paragraph</p>
+        <!-- Right Container: For Autobiography and Skills -->
+        <div class="content-container" style="flex: 2;">
+             <!-- For Autobiography -->
+            <div class="autobiography-container" id="about">
+                <div class="autobiography-title-container" style="flex: 1;">
+                    <h1>ABOUT ME</h1>
+                </div>
+                <div class="autobiography-text-container" style="flex: 6;">
+                    <p>Paragraph</p>
+                </div>
+            </div>
+
+            <div class="content-line-container"></div>
+
+            <!-- For Skills -->
+            <div class="skills-container" id="skills">
+                <div class="skills-title-container" style="flex: 1;">
+                    <h1>SKILLS<h1>
+                </div>
+                <div class="skills-text-container" style="flex: 6;">
+                    <p>Paragraph</p>
+                </div>
+            </div>
         </div>
     </div>
 

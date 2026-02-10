@@ -16,10 +16,14 @@ body {
     padding: 0;
 }
 
+/*============================================================*/
 /* Whole Header container*/
 .header {
     display: flex;
     background-color: rgb(47, 47, 47);
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 247, 228);
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -107,12 +111,11 @@ body {
 
 
 
-
+/*============================================================*/
 
 .flex-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -121,6 +124,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(69, 59, 44);
 }
 
 /* Style for the flex container for the about section*/
@@ -128,72 +134,181 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-style: solid;
-    border-width: 2px;
-    border-color: gray;
     height: 500px;
 }
 
-/* About - 1x1 container*/
-.about-logo {
+/*============================================================*/
+
+/* Style for the flex container for the info section*/
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: rgb(69, 59, 44);
+    height: 500px;
+}
+
+/* Info - 1x1 container*/
+.info-logo {
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin: 10px;
+    margin: 15px;
     height: 300px;
     object-fit: cover;
-    /*box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.4);*/
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* Style for the 1x1 img */
-.about-logo img {
+.info-logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-style: solid;
   border-width: 2px;
-  border-color: rgb(47, 47, 47);
+  border-color: rgb(62, 36, 38);
   transition: transform 0.3s ease;
 }
 
 /*Adds animation for the header's logo to grow when hovered*/
-.about-logo img:hover {
-  transform: scale(1.08);
+.info-logo img:hover {
+  transform: scale(1.06);
 }
 
-
-
-
-
-
-
-
-
-/* Style for the flex container*/
-.flex-container {
-    border-style: solid;
-    border-width: 2px;
-    border-color: gray;
-    height: 400px;
-}
-
-.flex-container2 {
+/*styling for container of the text under image*/
+.info-text-container{
+    justify-items: center;
+    align-items: center;
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling for the text in the Info*/
+.info-top-text{
+    color: rgb(62, 36, 38);
+    font-weight: bolder;
+    border: none;
+    align-items: center;
+    justify-items: center;
+    font-size: 25px;
+    margin: 15px;
+}
+
+/* Styling for the text in the Info*/
+.info-bottom-text{
+    color: rgb(62, 36, 38);
+    font-weight: normal;
+    border: none;
+    align-items: center;
+    justify-items: center;
+    font-size: 15px;
+    margin: 1px;
+}
+
+/* UP Logo - container*/
+.info-university {
+    display: flex;
+    align-items: center;
     flex-direction: row;
+    margin: 5px;
+    height: 60px;
+    object-fit: cover;
+    /*box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.4);*/
 }
-.flex-item {
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
+
+/* Style for the up logo img */
+.info-university img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
+
+/*============================================================*/
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content-line-container {
+    display: flex;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(69, 59, 44);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*============================================================*/
+
+.autobiography-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.autobiography-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.autobiography-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*============================================================*/
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*============================================================*/
 
 /* Whole footer container*/
 .footer {
     display: flex;
     background-color: rgb(47, 47, 47);
+    border-top-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 247, 228);
     justify-content: center;
     align-items: center;
     flex-direction: row;
