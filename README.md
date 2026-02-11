@@ -19,4 +19,10 @@ Congrats! The website has now been created with GitHub page.
 
 Key takeaways:
 
+    - Always remember to commit your work after every major change to make sure you have an adequate backup history with your progress!
+
+    - HTML and CSS is very fun to use and you need to make sure to seperate how you implement the presentation and layouting of a webpage!
+
+    - Don't overthink / don't be a perfectionist when it comes to designing! Complete the basics first.
+
 
