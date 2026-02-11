@@ -139,6 +139,24 @@ body {
 
 /*============================================================*/
 
+.top-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(69, 59, 44);
+}
+
+.bottom-body {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+/*============================================================*/
+
 /* Style for the flex container for the info section*/
 .info-container {
     display: flex;
@@ -149,6 +167,7 @@ body {
     border-width: 1px;
     border-color: rgb(69, 59, 44);
     height: 500px;
+    margin: 5px;
 }
 
 /* Info - 1x1 container*/
@@ -190,23 +209,25 @@ body {
 /* Styling for the text in the Info*/
 .info-top-text{
     color: rgb(62, 36, 38);
+    text-shadow: 5px 2px 60px #59544d;
     font-weight: bolder;
+    font-size: 25px;
+    margin: 15px;
     border: none;
     align-items: center;
     justify-items: center;
-    font-size: 25px;
-    margin: 15px;
 }
 
 /* Styling for the text in the Info*/
 .info-bottom-text{
     color: rgb(62, 36, 38);
+    text-shadow: 5px 2px 60px #59544d;
     font-weight: normal;
+    font-size: 15px;
+    margin: 1px;
     border: none;
     align-items: center;
     justify-items: center;
-    font-size: 15px;
-    margin: 1px;
 }
 
 /* UP Logo - container*/
@@ -235,6 +256,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
+    margin: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -246,6 +268,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Styling for the titles */
+.content-title{
+    color: rgb(62, 36, 38);
+    font-weight: bolder;
+    border: none;
+    align-items: flex-start;
+    font-size: 30px;
+    text-shadow: 5px 2px 60px #59544d;
+    text-decoration: underline;
+    text-decoration-color: rgb(62, 36, 38);
+}
+
 /*============================================================*/
 
 .autobiography-container {
@@ -254,23 +288,16 @@ body {
     align-items: flex-start;
     justify-content: center;
     margin: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .autobiography-title-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .autobiography-text-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*============================================================*/
@@ -278,27 +305,133 @@ body {
 .skills-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
     margin: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .skills-title-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .skills-text-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*============================================================*/
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;;
+}
+
+/* Styling for the title of previous projects */
+.projects-title{
+    display: flex;
+    color: rgb(62, 36, 38);
+    font-weight: bolder;
+    border: none;
+    font-size: 40px;
+    text-shadow: 5px 2px 80px #59544d;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-image-left-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: rgb(69, 59, 44);
+}
+
+.projects-image-right-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: rgb(69, 59, 44);
+}
+
+.projects-text-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 180px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(69, 59, 44);
+}
+
+.projects-left-title{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: rgb(62, 36, 38);
+    text-shadow: 5px 2px 60px #59544d;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.projects-right-title{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: rgb(62, 36, 38);
+    text-shadow: 5px 2px 60px #59544d;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.projects-left-description{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: rgb(62, 36, 38);
+    text-shadow: 5px 2px 60px #59544d;
+    font-weight: normal;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.projects-right-description{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: rgb(62, 36, 38);
+    text-shadow: 5px 2px 60px #59544d;
+    font-weight: normal;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.projects-empty{
+    display: flex;
+    flex-direction: row;
+    min-width: 50px;
+}
+
+
 
 /*============================================================*/
 
